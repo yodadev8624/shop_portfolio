@@ -1,0 +1,73 @@
+.register {
+  
+}
+.register input {
+  width: 100%;
+}
+.register .inner {
+  width: 600px;
+  padding: 50px 0;
+}
+.register .inner h1 {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.register .inner .register__card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.register .inner .register__card img {
+  width: 200px;
+  margin: 0 auto;
+}
+.register .inner .register__card h2 {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+}
+.register .inner .register__card .input_box {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 20px;
+}
+.register .inner .register__card .input_box h3 {
+  margin-bottom: 5px;
+}
+.register .inner .register__card .input_box:last-child {
+  border-bottom: none;
+}
+.register .inner .register__card .input_box input {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.register .inner .register__card .input_box input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+}
+.register .inner .register__card .input_box input.input_warn {
+  border: 1px solid #ed1c24;
+}
+.register .inner .register__card .input_box select {
+  font-size: 16px;
+  border: 1px solid #ddd;
+  padding: 16px 20px;
+}
+.register .inner .actions {
+  border-radius: 3px;
+  text-align: center;
+  padding: 0 50px;
+}
+.register .inner .actions input {
+  background-color: #006633;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+}

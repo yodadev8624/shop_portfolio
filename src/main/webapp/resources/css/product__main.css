@@ -1,0 +1,27 @@
+.board {
+
+}
+.board ul.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.board ul.product li {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.board ul.product li .product__contents {
+}
+.board ul.product li .product__contents img {
+  width: 255px;
+  height: 255px;
+  object-fit: cover;
+}
+.board ul.product li .product__name {
+  margin-top: 10px;
+}
+.board ul.product li .product__price {
+  margin-top: 10px;
+}

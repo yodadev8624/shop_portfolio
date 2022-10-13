@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.mappers.product">
+
+	<!-- 상품 리스트 조회 -->
+	<select id="selectProductList" resultType="ProductDTO">
+		select pd_seq, pd_name, pd_code, pd_file, pd_contents, pd_price
+		from product
+	</select>
+	
+	<!-- 상품 조회 -->
+	<select id="selectProduct" parameterType="String" resultType="ProductDTO">
+		select pd_seq, pd_name, pd_code, pd_file, pd_contents, pd_price
+		from product
+		where pd_code = #{pd_code}
+	</select>
+	
+	<!-- 상품 사이즈별 개수 조회 -->
+	<select id="selectProductCount" parameterType="String" resultType="ProductDTO">
+		select pd_size, pd_count, pd_code, pd_ct_seq
+		from product_count
+		where pd_code = #{pd_code}
+		and pd_size = 95
+		order by pd_size
+	</select>
+</mapper>

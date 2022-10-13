@@ -1,0 +1,77 @@
+/* SECTION PROMOTION */
+.promotion {
+  height: 300px;
+  background-color: #f6f5ef;
+  position: relative;
+}
+.promotion .swiper {
+  width: calc(900px * 3 + 10px + 10px);
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.promotion .swiper .swiper-slide {
+  opacity: .4;
+  transition: opacity .5s;
+  overflow: hidden;
+}
+.promotion .swiper .swiper-slide-active {
+  opacity: 1;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #222;
+}
+.promotion .swiper-button-prev,
+.promotion .swiper-button-next {
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  color: #c41e20
+}
+.promotion .swiper-button-prev {
+  position: absolute;
+  left: 50%;
+  margin-left: -450px;
+}
+.promotion .swiper-button-next {
+  position: absolute;
+  right: 50%;
+  margin-right: -450px;
+}
+.swiper-pagination {
+	background-color: transparent;
+}
+
+
+/* SECTION CONT */
+.cont {
+
+}
+.cont h3 {
+
+}
+.cont .cont__item-box {
+
+}
+.cont .cont__item-box ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cont .cont__item-box ul li {
+  margin: 15px 10px;
+}
+.cont .cont__item-box ul li a {
+
+}
+.cont .cont__item-box ul li a img {
+  width: 255px;
+  height: 255px;
+  object-fit: cover;
+}
